@@ -2,6 +2,12 @@
     font-family: roboto, sans-serif;
 }
 
+/* Removes the margin (Whitespace) */
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* Make sure all links have no design */
 a {
     text-decoration: none;
@@ -49,8 +55,6 @@ body{
 .header .first-link{
     margin-left: auto;
 }
-
-/* TODO: Make sure that even margins have the same background color */
 
 /* Content Styles */
 /* Make sure items are also flex */
