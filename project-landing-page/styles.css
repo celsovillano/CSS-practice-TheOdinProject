@@ -16,6 +16,7 @@ a:visited{
 a:hover{
     text-decoration: underline;
     color: #E5E7EB;
+    cursor: pointer;
 }
 
 /* Body as flex container with column flex direction */
@@ -47,4 +48,66 @@ body{
 /* Persist Right */
 .header .first-link{
     margin-left: auto;
+}
+
+/* TODO: Make sure that even margins have the same background color */
+
+/* Content Styles */
+/* Make sure items are also flex */
+.content-desc{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2.5%;
+    background-color: #1F2937;
+    height: 300px;
+}
+
+/* Right Panel - flex */
+.content-desc-right{
+    background: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40%;
+    padding: 0px;
+    /* margin-right: auto; */
+}
+
+/* Left Panel - flex */
+.content-desc-left{
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 200px;
+    gap: -10px;
+    flex-wrap: nowrap;
+    padding: 0px;
+    margin: 0px;
+    justify-content: space-around;
+    /* margin-left: auto; */
+}
+
+/* Hero */
+.awesome{
+    font-size: 48px;
+    font-weight: 1000;
+    color: #F9FAF8;
+}
+
+/* Button for content */
+.content-button{
+    background-color: #3882F6;
+    border-radius: 4px;
+    border: none;
+    color: #F9FAF8;
+    width: 35%;
+    display: block; /* Important for the whole button to be click-able */
+}
+
+button:hover{
+    cursor: pointer;
 }
