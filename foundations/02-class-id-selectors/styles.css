@@ -1,0 +1,26 @@
+/* styles.css */
+
+*{
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.odd{
+    background-color: #ffb6c1;
+    font-family: Verdana, "Dejavu Sans", sans-serif;
+}
+
+#unique_salonga{
+    color: #0000ff;
+    font-size: 36px;
+}
+
+.odd.three{
+    font-size: 24px;
+}
+
+#four{
+    font-weight: bold;
+    font-size: 24px;
+    background-color: #90ee90;
+}
