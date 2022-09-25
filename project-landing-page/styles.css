@@ -65,6 +65,8 @@ body{
     gap: 2.5%;
     background-color: #1F2937;
     height: 300px;
+    flex: 1;
+    padding: 32px;
 }
 
 /* Right Panel - flex */
@@ -77,7 +79,6 @@ body{
     height: 200px;
     width: 40%;
     padding: 0px;
-    /* margin-right: auto; */
 }
 
 /* Left Panel - flex */
@@ -92,7 +93,6 @@ body{
     padding: 0px;
     margin: 0px;
     justify-content: space-around;
-    /* margin-left: auto; */
 }
 
 /* Hero */
@@ -115,4 +115,76 @@ body{
 
 button:hover{
     cursor: pointer;
+}
+
+
+/* Random Information Panel */
+/* Current architecture: panel 1 - Header, panel 2 - group of boxes */
+/* Hence the flex-direction should be along the column of the page */
+.rand_info{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    gap: 16px;
+    padding: 16px;
+    margin: 16px;
+}
+
+.rand_info_header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    padding: 16px;
+}
+
+/* Adjust boxes and its contents */
+/* Current architecture: the boxes and contents are enclosed in a  container - rand_info-content */
+/* Flex-direction for rand_info-content should be along the row */
+.rand_info_content{
+    display: flex;
+    justify-content: center; /* TODO: Test "center" */
+    gap: 16px;
+    text-align: center;
+}
+
+/* Inside the container is another container/box (box_and_content) that would contain the image and the caption altogether */
+/* align the image box and its subtext along the column */
+.box_and_content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    width: 20%;
+    color: #1F2937;
+    gap: 8px;
+}
+
+/* style the box containing the image */
+.box_image{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #3882F6;
+    border-radius: 8px;
+    color: #1F2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 130px;
+    flex: 1 1 auto;
+}
+
+/* style the subtext under the image box */
+.box_subtext{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    width: 150px;
 }
