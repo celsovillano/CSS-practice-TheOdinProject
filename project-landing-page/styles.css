@@ -221,6 +221,8 @@ button:hover{
     flex: 1;
     justify-content: center;
     align-content: center;
+    background-color: white;
+    padding: 10%;
 }
 
 /* Add background color to action box */
@@ -229,6 +231,13 @@ button:hover{
     flex: 1;
     background-color: #3882F6;
     color: #F9FAF8;
+    width: 150px; 
+    height: 100px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 30%;
+    border-radius: 12px;
 }
 
 /* Call to action texts */
@@ -239,4 +248,17 @@ button:hover{
 
 .action_subtext{
     font-size: 14px;
+}
+
+.action_box_right{
+    display: flex;
+}
+
+.action_box_right .content-button{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    width: 85px;
+    height: 30px;
+    font-weight: bold;
 }
